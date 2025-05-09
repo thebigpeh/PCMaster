@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Master - Montagem de Computadores Personalizados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-desktop text-3xl text-blue-300"></i>
+                    <h1 class="text-2xl font-bold">PC<span class="text-blue-300">Master</span></h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-blue-200 transition-all">DANDO ENTER PARA O FUTURO</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="tel:27997569673" class="hidden md:flex items-center bg-blue-400 hover:bg-blue-300 text-white px-4 py-2 rounded-full transition-all">
+                        <i class="fas fa-phone-alt mr-2"></i> (27) 99756-9673
+                    </a>
+                    <button class="md:hidden text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Monte o PC dos seus sonhos</h2>
+                <p class="text-xl mb-8 text-blue-100">Componentes de alta qualidade selecionados por especialistas para atender desde iniciantes até hardcore gamers.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full font-semibold transition-all">
+                        <i class="fas fa-tools mr-2"></i> Tire dúvidas e Monte Agora
+                    </button>
+                    <a href="https://wa.me/5527997569673" target="_blank" class="flex items-center justify-center border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-full font-semibold transition-all">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                </div>
+                <div class="mt-4 flex items-center text-blue-100">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    <span>Ou ligue: <a href="tel:27997569673" class="font-bold hover:text-white">(27) 99756-9673</a></span>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                      alt="Computador Gamer"
+                      class="w-full max-w-md rounded-lg shadow-2xl floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Por que escolher a PC Master?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center card-hover transition-all">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Garantia de funcionalidade</h3>
+                    <p class="text-gray-600">Todos os nossos produtos possuem garantia e suporte técnico especializado.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center card-hover transition-all">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-truck text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Entrega Rápida</h3>
+                    <p class="text-gray-600">Montagem e entrega em até 48h para todo o estado Espírito Santo.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center card-hover transition-all">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Montagem Profissional</h3>
+                    <p class="text-gray-600">Nossos técnicos certificados realizam testes rigorosos antes do envio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PC Configurations -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Configurações Populares</h2>
+            <p class="text-center text-gray-600 mb-12">Escolha entre nossas montagens pré-configuradas ou personalize do seu jeito</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic PC -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all">
+                    <div class="bg-blue-500 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Iniciante</h3>
+                        <p class="text-blue-100">Para trabalho e estudos</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-3xl font-bold text-gray-800">R$ 2.699</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">-10%</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Intel Core i3 10100F</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>8GB RAM DDR4</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>SSD 240GB</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Placa de Vídeo GTX 1650</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5527997569673?text=Olá, gostaria de saber mais sobre o PC Iniciante" target="_blank" class="block w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition-all text-center">
+                            <i class="fas fa-shopping-cart mr-2"></i> Comprar
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mid PC (Featured) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl transform scale-105 card-hover transition-all relative">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 text-xs font-bold rounded-bl-lg">
+                        MAIS VENDIDO
+                    </div>
+                    <div class="bg-blue-600 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Gamer</h3>
+                        <p class="text-blue-200">Para jogos atuais em Full HD</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-3xl font-bold text-gray-800">R$ 5.499</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">-15%</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>AMD Ryzen 5 5600X</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>16GB RAM DDR4 3200MHz</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>SSD NVMe 500GB</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>RTX 3060 12GB</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5527997569673?text=Olá, gostaria de saber mais sobre o PC Gamer" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-all text-center">
+                            <i class="fas fa-shopping-cart mr-2"></i> Comprar
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- High-End PC -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all">
+                    <div class="bg-blue-700 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Premium</h3>
+                        <p class="text-blue-200">Para criadores e hardcore gamers</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-3xl font-bold text-gray-800">R$ 9.999</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">-5%</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Intel Core i9 12900K</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>32GB RAM DDR5 5200MHz</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>SSD NVMe 1TB + HDD 2TB</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>RTX 4070 16GB</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5527997569673?text=Olá, gostaria de saber mais sobre o PC Premium" target="_blank" class="block w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded-lg font-semibold transition-all text-center">
+                            <i class="fas fa-shopping-cart mr-2"></i> Comprar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Builder CTA -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl p-8 md:p-12 text-white">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-2/3 mb-8 md:mb-0">
+                        <h2 class="text-3xl font-bold mb-4">Monte seu PC personalizado</h2>
+                        <p class="text-lg mb-6 text-blue-100">Escolha cada componente com nosso configurador avançado e receba orientação de nossos especialistas.</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <button class="bg-white text-blue-600 hover:bg-blue-100 px-8 py-3 rounded-full font-semibold transition-all">
+                                <i class="fas fa-sliders-h mr-2"></i> Iniciar Configurador
+                            </button>
+                            <a href="tel:27997569673" class="flex items-center justify-center border-2 border-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-full font-semibold transition-all">
+                                <i class="fas fa-phone-alt mr-2"></i> Ligar Agora
+                            </a>
+                        </div>
+                        <p class="mt-4 text-blue-100">
+                            <i class="fas fa-info-circle mr-2"></i> Dúvidas? Fale com nosso especialista: <a href="tel:27997569673" class="font-bold hover:text-white">(27) 99756-9673</a>
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                              alt="Componentes de PC"
+                              class="w-full max-w-xs rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O que nossos clientes dizem</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Comprei meu PC Gamer na PC Master e estou extremamente satisfeito. O desempenho é incrível e o suporte pós-venda é excelente!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Carlos Silva</h4>
+                            <p class="text-sm text-gray-500">Gamer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Como designer gráfico, preciso de um computador potente. A equipe me ajudou a montar a configuração perfeita para meu trabalho."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ana Oliveira</h4>
+                            <p class="text-sm text-gray-500">Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Montagem impecável, cabos organizados e performance acima do esperado. Recomendo a todos que querem um PC de qualidade."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ricardo Santos</h4>
+                            <p class="text-sm text-gray-500">Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-center text-gray-500 mb-8">Trabalhamos com as melhores marcas</h3>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="https://via.placeholder.com/120x60?text=Intel" alt="Intel" class="h-12 opacity-70 hover:opacity-100 transition-all">
+                <img src="https://via.placeholder.com/120x60?text=AMD" alt="AMD" class="h-12 opacity-70 hover:opacity-100 transition-all">
+                <img src="https://via.placeholder.com/120x60?text=NVIDIA" alt="NVIDIA" class="h-12 opacity-70 hover:opacity-100 transition-all">
+                <img src="https://via.placeholder.com/120x60?text=Corsair" alt="Corsair" class="h-12 opacity-70 hover:opacity-100 transition-all">
+                <img src="https://via.placeholder.com/120x60?text=ASUS" alt="ASUS" class="h-12 opacity-70 hover:opacity-100 transition-all">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-desktop text-blue-400 mr-2"></i> PC Master
+                    </h3>
+                    <p class="text-gray-400 mb-4">Especialistas em montagem de computadores personalizados desde 2012.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-all">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all">Sobre Nós</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all">Trabalhe Conosco</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Ajuda</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all">Suporte Técnico</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all">Trocas e Devoluções</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-blue-400"></i> Av. 00000, 1000 - Vitoria/ES
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-blue-400"></i> <a href="tel:27997569673" class="hover:text-white">(27) 99756-9673</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i> contato@pcmaster.com.br
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-2 text-blue-400"></i> Seg-Sex: 9h-18h
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 PC Master. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5527997569673" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Simple animation for cards on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card-hover');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            cards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Mobile menu toggle (would need more implementation)
+            const mobileMenuButton = document.querySelector('button[class*="md:hidden"]');
+            mobileMenuButton.addEventListener('click', function() {
+                alert('Menu mobile seria aberto aqui em uma implementação completa');
+            });
+        });
+    </script>
+</body>
+</html>
